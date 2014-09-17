@@ -1,0 +1,128 @@
+$gb_base_dark: rgba(36, 0, 89, 1)
+$gb_base_half: rgba(36, 0, 89, 0.50)
+$gb_base_lite: rgba(245, 245, 245, 1)
+$gb_annex_dark: rgba(216, 34, 0, 1)
+$gb_annex_half: rgba(216, 34, 0, 0.50)
+$gb_annex_lite: rgba(216, 34, 0, 0.15)
+$gb_title_font: 'Ubuntu', sans-serif
+$gb_text_font: 'PT Serif', serif
+
+body
+  color: $gb_base_dark
+  background-color: $gb_base_lite
+  font-family: $gb_text_font
+  font-size: 16px
+  line-height: 1.5
+  margin: 30px auto
+  footer
+    padding: 10px 0px 0px 0px
+    border-top: 1px solid $gb_annex_half
+    border-bottom: 1px solid $gb_annex_half
+    & ul li i
+      width: 30px !important
+      height: 30px !important
+      padding-top: 8px
+      padding-right: 1px
+      background-color: $gb_base_dark
+      border-radius: 50%
+      color: white !important
+    & ul li a:hover i
+      background-color: $gb_annex_dark
+
+ul li
+  display: inline
+  font-family: $gb_text_font
+
+h1, h2, h3, em, nav
+  font-family: $gb_title_font
+  text-align: justify
+
+h3 i
+  color: $gb_base_dark
+
+hr
+  border-color: $gb_annex_half
+
+a
+  transition: all 0.6s ease
+  color: $gb_annex_dark
+  opacity: 0.8 !important
+  &:hover
+    color: $gb_base_dark
+    text-decoration: none !important
+    opacity: 1
+
+address
+  display: inline
+  margin: 0px auto
+
+dl
+  margin: 0px auto
+  font-family: $gb_text_font
+  a
+    font-family: $gb_text_font
+    color: $gb_base_dark
+    &:hover
+      color: $gb_annex_dark
+  dt, dd
+    display: inline
+  dt:after
+    content: ":"
+  dd:after
+    content: "\A"
+    white-space: pre
+  dd ul
+    padding: 0px 0px
+    display: inline
+  dd ul li
+    &:after
+      content: ","
+    &:last-child:after
+      content: ""
+
+article
+  #head
+    & > h1
+      font-size: 6em
+      text-align: center
+      border-bottom: 1px solid $gb_base_half
+      margin: 0px 0px
+  section
+    padding: 10px 0px
+    width: 75%
+    float: left
+  aside
+    width: 20%
+    float: right
+  h2
+    font-size: 1.75em
+    color: $gb_annex_dark
+    margin: 0px 0px
+  h3
+    margin: 10px 0px
+  h3, em
+    font-size: 1.125em
+    color: $gb_annex_half
+  em
+    font-weight: bold
+    font-size: .875em
+    line-height: 1.2
+  hr
+    border-bottom: 0px
+  ol
+    list-style-type: upper-roman
+
+#id
+  border-bottom: 1px solid $gb_annex_lite
+
+#codeschool
+  ul
+    margin-top: 20px
+  li
+    margin: 5px
+  img
+    width: 50px
+    height: 50px
+
+#gravatar
+  box-shadow: 1px 1px $gb_annex_dark, 1px 1px $gb_annex_half, 1px 1px $gb_annex_lite
